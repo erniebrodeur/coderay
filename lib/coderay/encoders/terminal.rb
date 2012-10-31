@@ -3,8 +3,7 @@ require 'yaml'
 module CodeRay
   module Encoders
     def self.theme_dir
-      puts $:.select {|x| x =~ /coderay/}
-      FileUtils.absolute_path ($:.select {|x| x =~ /coderay/}.first + " /coderay/styles/terminal")
+      $:.select {|x| x =~ /coderay/}.first + " /coderay/styles/terminal"
     end
 
     # Outputs code highlighted for a color terminal.
