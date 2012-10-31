@@ -1,3 +1,5 @@
+require 'yaml'
+
 module CodeRay
   module Encoders
     def self.theme_dir
@@ -18,7 +20,6 @@ module CodeRay
     #
     # MIT License (http://www.opensource.org/licenses/mit-license.php)
     class Terminal < Encoder
-
       register_for :terminal
 
      protected
@@ -35,6 +36,10 @@ module CodeRay
       end
 
     public
+      def initialize(args)
+        super args
+        @theme = nil
+      end
 
       def theme=(name)
         @theme if @theme
