@@ -41,7 +41,7 @@ module CodeRay
 
         f = "#{Encoders.theme_dir}/#{name}.yaml"
         f = "#{Encoders.theme_dir}/default.yaml" if !File.exist? f
-        @theme = YAML.load_file f
+        @theme = ::YAML.load_file f
       end
 
       def theme
