@@ -3,6 +3,7 @@ require 'yaml'
 module CodeRay
   module Encoders
     def self.theme_dir
+      puts $:
       "#{$:.select {|x| x =~ /coderay/}.first}/coderay/styles/terminal"
     end
 
