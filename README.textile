@@ -1,4 +1,4 @@
-h1. CodeRay [![Build Status](https://secure.travis-ci.org/erniebrodeur/coderay.png)](http://travis-ci.org/erniebrodeur/coderay)
+h1. CodeRay !https://secure.travis-ci.org/erniebrodeur/coderay.png(Build Status)!:http://travis-ci.org/erniebrodeur/coderay
 
 h2. About
 
