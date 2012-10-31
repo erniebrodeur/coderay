@@ -11,5 +11,5 @@ rvm:
   - ree
 branches:
   only:
-    - master
+    - theme-loading
 script: "rake test" # test:scanners"
