@@ -1,4 +1,4 @@
-h1. CodeRay !https://secure.travis-ci.org/rubychan/coderay.png!:https://secure.travis-ci.org/rubychan/coderay
+h1. CodeRay [![Build Status](https://secure.travis-ci.org/erniebrodeur/coderay.png)](http://travis-ci.org/erniebrodeur/coderay)
 
 h2. About
 
@@ -30,7 +30,7 @@ bc.. require 'coderay'
 
 html = CodeRay.scan("puts 'Hello, world!'", :ruby).div(:line_numbers => :table)
 
-p. 
+p.
 
 h2. Documentation
 
