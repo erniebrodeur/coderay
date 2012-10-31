@@ -4,7 +4,7 @@ module CodeRay
   module Encoders
     def self.theme_dir
       puts $:.select {|x| x =~ /coderay/}
-      "#{$:.select {|x| x =~ /coderay/}.first}/coderay/styles/terminal"
+      FileUtils.absolute_path ($:.select {|x| x =~ /coderay/}.first + " /coderay/styles/terminal")
     end
 
     # Outputs code highlighted for a color terminal.
